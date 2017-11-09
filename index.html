@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Swayze Express</title>
+
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    	
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		
+		<script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	</head>
+
+	<body style="background-color:#4D95CB">
+		<div class="container">
+			<div class="jumbotron" style="background-color:#112F43; color:#E5E6E6">
+				<h1 class="text-center">Who here loves TRAINS?!?!?!?</h1>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading" style="background-color:#112F43">
+							<h3 class="panel-title"><b>Current Schedule</b></h3>
+						</div>
+						<div class="panel-body" style="background-color:#B6D4E7">
+							<table class="table table-hover" id="trainTable">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Destination</th>
+										<th>Frequency</th>
+										<th>Next Arrival</th>
+										<th>Time Away</th>
+									</tr>
+								</thead>
+								<tbody>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="panel panel-primary">
+							<div class="panel-heading" style="background-color:#112F43">
+								<h3 class="panel-title"><b>Add a Train</b></h3>
+							</div>
+							<div class="panel-body"  style="background-color:#B6D4E7">
+								<form>
+									<div class="trainForm">
+										<label for="">Train Name</label>
+										<input type="text" class="form-control" id="inputNewTrain">
+									</div>
+									<div class="trainForm">
+										<label for="">Destination</label>
+										<input type="text" class="form-control" id="destinationInput">
+									</div>
+									<div class="trainForm">
+										<label for="">First Departure Time (24:00 format)</label>
+										<input type="text" class="form-control" id="departureInput">
+									</div>
+									<div class="trainForm">
+										<label for="">Frequency</label>
+										<input type="text" class="form-control" id="frequencyInput">
+									</div>
+									<button type="submit" class="btn btn-primary" id="addNewTrain">NEW TRAIN!!</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+
+		<!--couldnt get the sound i wanted from sound source so i added a youtube link to the dialogue and reduced the video size to min-->
+		<div> <iframe width="1" height="1" src="https://www.youtube.com/embed/oFqqE91BSvE?autoplay=1" frameborder="0" gesture="media" allowfullscreen></iframe>
+	<script src="app.js"></script>
+	</body>
+	</html>
